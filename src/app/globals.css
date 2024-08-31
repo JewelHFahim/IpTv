@@ -2,32 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.Home {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("/assets/htt.webp");
+  background-size: cover;
+  background-position: top;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.Subscription {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("/assets/call_center.jpg");
+  background-size: cover;
+}
+
+.ChannelList {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("/assets/htt.webp");
+  background-size: cover;
+}
+
+.ContactUs {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("/assets/call_center.jpg");
+  background-size: cover;
+}
+
+.FAQ {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("/assets/htt.webp");
+  background-size: cover;
+}
+
+/* =======================>> Common Section <<======================== */
+
+.commonPadding {
+  padding: 0px 120px;
+}
+
+@media only screen and (max-width: 600px) {
+  .commonPadding {
+    padding: 0px 20px;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* =======================>> Mobile Responsive <<======================== */
+@media only screen and (max-width: 600px) {
+  .Home {
+    background-size: auto;
+    background-position: top;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* =======================>> Hero Section <<======================== */
+
+.heroSection {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255),
+      rgba(255, 0, 191, 0)
+    ),
+    url("/assets/htt.webp");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .heroSection {
+    height: 95vh;
   }
+}
+
+/* =======================>> Connect Ip <<======================== */
+
+.parallax {
+  /* The image used */
+  background-image: url("/assets//map-1.webp");
+
+  /* Set a specific height */
+  min-height: 350px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
